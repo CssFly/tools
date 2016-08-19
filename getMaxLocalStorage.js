@@ -1,6 +1,6 @@
 /*/
  * Get how much localStorage is available in browser.
- * found on: http://stackoverflow.com/questions/2989284/what-is-the-max-size-of-localstorage-values#answer-25812530
+ * Derivated from: http://stackoverflow.com/questions/2989284/what-is-the-max-size-of-localstorage-values#answer-25812530
 /*/
 
 function getMaxLocalStorage()
