@@ -25,5 +25,5 @@ function getMaxLocalStorage()
   return result;
 }
 
-console.log('localStorage maximum: ' + getMaxLocalStorage().size || 'localStorage not available');
+console.log('localStorage maximum: ' + getMaxLocalStorage().size + ' MB' || 'localStorage not available');
 
