@@ -1,6 +1,6 @@
 # tools
 Collection of code snippets 
 
-Tools for JS console:
+Tools for getting infos about the browser:
 
-- Get localStorage size
+- getMaxLocalStorage size
