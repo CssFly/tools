@@ -5,23 +5,18 @@
 
 function getMaxLocalStorage()
 {
-  var result = {
-    'size': 0
-  };
-  if (!window.localStorage)
-  {
-    return null;
-  }
+  var result = { 'size': 0 }, i;
+  if (!window.localStorage) { return null; }
   try 
   {
-    for (var i = 250; i <= 10000; i += 250) 
+    for (i = 250; i <= 10000; i += 250) 
     {
       window.localStorage.setItem('testMaxLocalStorage', new Array((i * 1024) + 1).join('a'));
     }
   } catch (e) {
     window.localStorage.removeItem('testMaxLocalStorage');
-    result.size = ((i - 250)/1000).toFixed(2);      
   }
+  result.size = ((i - 250)/1000).toFixed(2);      
   return result;
 }
 
